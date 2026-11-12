@@ -1,0 +1,32 @@
+:root {
+  --color-canvas: #FFF9F0;
+  --color-surface: #FFFFFF;
+  --color-ink: #35251F;
+  --color-muted: #5C514A;
+  --color-brand: #4B2468;
+  --color-brand-soft: #F0E8F4;
+  --color-action: #176B3A;
+  --color-action-hover: #10552D;
+  --color-border: #75665E;
+  --color-border-soft: #E4DACE;
+  --color-error: #8B1E24;
+  --font-heading: 'Nunito', sans-serif;
+  --font-body: 'Atkinson Hyperlegible', sans-serif;
+  --text-small: 0.875rem;
+  --text-base: 1.125rem;
+  --text-large: 1.406rem;
+  --text-xl: 1.758rem;
+  --text-2xl: 2.2rem;
+  --text-hero: clamp(2.75rem, 8vw, 4rem);
+  --line-height: 1.5;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+  --shadow-card: 0 10px 32px rgb(53 37 31 / 8%);
+  --content-width: 72rem;
+}

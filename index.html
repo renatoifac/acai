@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9f0">
+  <meta name="description" content="Monte seu açaí e peça para retirar na Açaí da Ponte, em Sena Madureira.">
+  <title>Açaí da Ponte — seu açaí, do seu jeito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Açaí da Ponte, início">
+        <img src="assets/img/marca.svg" alt="">
+        <span>Açaí <span class="brand-light">da Ponte</span></span>
+      </a>
+      <a class="header-help" href="#como-pedir">Como pedir</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <div class="hero-copy">
+        <p class="eyebrow">Feito com carinho em Sena Madureira</p>
+        <h1 id="titulo-principal">Seu açaí,<br><span>do seu jeito.</span></h1>
+        <p class="hero-description">Monte seu copo e retire quentinho de sabor, fresquinho pra você.</p>
+        <p class="store-status" id="store-status" aria-live="polite"></p>
+      </div>
+      <img class="hero-image" src="assets/img/acai-copo.svg" alt="Copo de açaí com banana e granola">
+    </section>
+
+    <nav class="section-nav" aria-label="Seções da página">
+      <a href="#monte">Montar meu copo</a>
+      <a href="#loja">Endereço e horário</a>
+    </nav>
+
+    <section class="builder section-shell" id="monte" aria-labelledby="builder-title">
+      <div class="section-heading">
+        <p class="eyebrow">Do seu jeito</p>
+        <h2 id="builder-title">Monte seu copo</h2>
+        <p>Escolha um tamanho e até <span id="topping-limit"></span> complementos.</p>
+      </div>
+      <div class="builder-grid">
+        <div class="choices">
+          <fieldset class="choice-group">
+            <legend><span class="step-number">1</span> Escolha o tamanho</legend>
+            <div class="size-options" id="size-options"></div>
+            <p class="field-message" id="size-message">Escolha um tamanho para continuar.</p>
+          </fieldset>
+          <fieldset class="choice-group">
+            <legend><span class="step-number">2</span> Escolha os complementos</legend>
+            <p class="field-hint">Marque até <span id="topping-limit-inline"></span> opções. Os preços aparecem em cada cartão.</p>
+            <div class="topping-options" id="topping-options"></div>
+            <p class="field-message" id="topping-message" aria-live="polite"></p>
+          </fieldset>
+          <button class="button button-primary add-button" id="add-item" type="button" disabled>Adicionar copo ao pedido</button>
+        </div>
+
+        <aside class="order-card" aria-labelledby="order-title">
+          <div class="order-heading">
+            <div>
+              <p class="eyebrow">Sem cadastro</p>
+              <h3 id="order-title">Seu pedido</h3>
+            </div>
+            <button class="text-button" id="clear-order" type="button" hidden>Limpar pedido</button>
+          </div>
+          <div id="order-items" class="order-items" aria-live="polite"></div>
+          <div class="order-empty" id="order-empty">
+            <span class="empty-icon" aria-hidden="true">♡</span>
+            <p>Seu pedido começa com um copo gostoso.</p>
+          </div>
+          <button class="repeat-button" id="repeat-order" type="button" hidden>↻ &nbsp;Repetir último pedido</button>
+          <div class="order-total"><span>Total</span><strong id="order-total"></strong></div>
+          <p class="pickup-note">Retirada na loja · pagamento no balcão</p>
+          <a class="button button-primary whatsapp-button is-disabled" id="send-order" href="#monte" aria-disabled="true">Pedir pelo WhatsApp</a>
+          <p class="send-hint" id="send-hint">Adicione um copo para liberar o pedido.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="info-section" id="loja" aria-labelledby="store-title">
+      <div class="info-inner">
+        <div class="store-info">
+          <p class="eyebrow">Passe aqui pra buscar</p>
+          <h2 id="store-title">A gente te espera</h2>
+          <p class="store-address" id="store-address"></p>
+          <div class="hours-block">
+            <h3>Horário de atendimento</h3>
+            <p id="store-hours"></p>
+          </div>
+          <a class="text-link" id="question-link" href="#">Ficou com dúvida? Chame a gente no WhatsApp →</a>
+        </div>
+        <div class="how-card" id="como-pedir">
+          <p class="eyebrow">É rapidinho</p>
+          <h2>Como pedir</h2>
+          <ol class="steps-list">
+            <li><span>1</span><div><strong>Monte seu copo</strong><p>Escolha o tamanho e seus complementos favoritos.</p></div></li>
+            <li><span>2</span><div><strong>Envie pelo WhatsApp</strong><p>Confira o pedido e mande pra gente. Sem cadastro.</p></div></li>
+            <li><span>3</span><div><strong>Retire na loja</strong><p>Combinamos por mensagem e você busca fresquinho.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Açaí da Ponte</span><span>Um carinho geladinho no seu dia 💜</span><span>Projeto acadêmico — IFAC, disciplina de IHC. Empresa fictícia.</span></footer>
+  <div class="mobile-checkout" aria-label="Resumo do pedido">
+    <div><span>Total do pedido</span><strong id="mobile-total"></strong></div>
+    <a class="button button-primary is-disabled" id="mobile-send" href="#monte" aria-disabled="true">Enviar pedido</a>
+  </div>
+  <dialog id="clear-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="dialog-content">
+      <h2 id="dialog-title">Limpar seu pedido?</h2>
+      <p>Todos os copos e complementos escolhidos serão removidos.</p>
+      <div class="dialog-actions"><button class="button button-secondary" value="cancel">Continuar escolhendo</button><button class="button button-primary" id="confirm-clear" value="confirm">Sim, limpar</button></div>
+    </form>
+  </dialog>
+</body>
+</html>
+

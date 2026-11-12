@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 390" role="img" aria-labelledby="title desc">
+  <title id="title">Copo de açaí com banana e granola</title>
+  <desc id="desc">Ilustração de um copo alto de açaí roxo, com cobertura de banana e granola.</desc>
+  <ellipse cx="180" cy="357" rx="116" ry="17" fill="#35251f" opacity=".12"/>
+  <path d="M83 110h194l-23 228c-1 10-9 17-19 17h-110c-10 0-18-7-19-17z" fill="#4b2468"/>
+  <path d="M99 163h162l-18 174H117z" fill="#6a3487"/>
+  <path d="M83 111h194l-8 62H91z" fill="#3c1d53"/>
+  <path d="M75 93c13-14 33-12 48-4 14-17 37-18 54-5 17-15 42-12 54 5 18-10 42-4 51 13l-9 20H88z" fill="#f0c7e5"/>
+  <path d="M99 106c8-16 24-20 38-10 13-13 32-12 43 2 17-14 38-7 43 9z" fill="#eee0b7"/>
+  <g fill="#d69a49"><circle cx="123" cy="99" r="4"/><circle cx="146" cy="105" r="3"/><circle cx="166" cy="97" r="4"/><circle cx="192" cy="104" r="3"/><circle cx="214" cy="96" r="4"/><circle cx="235" cy="105" r="3"/></g>
+  <path d="M148 88c8-18 35-22 52-9 11 8 17 22 16 34-29-5-51-13-68-25z" fill="#f4c847"/>
+  <path d="M171 77c13-5 26-1 34 7" fill="none" stroke="#d69b32" stroke-width="3" stroke-linecap="round"/>
+  <path d="M122 204c24 16 87 16 119-1M119 252c33 14 83 14 112-1" fill="none" stroke="#9d68b3" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+  <path d="M101 119h158" stroke="#fff9f0" stroke-width="4" opacity=".75"/>
+  <path d="M155 234h48" stroke="#fff9f0" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+</svg>
